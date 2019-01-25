@@ -1,0 +1,130 @@
+.preview {
+  .padding-Y(60);
+  background: #312F2F url(../i/bg-i/review-bg.jpg) no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  .min-height(500);
+  .padding-Y(sm, 40);
+  .padding-Y(xs, 30);
+  .padding-Y(xxs, 20);
+}
+
+.section__header {
+  .center-align();
+  margin-bottom: 60px;
+  .margin-Y(bottom-sm, 40);
+  .margin-Y(bottom-xs, 30);
+  .margin-Y(bottom-xxs, 20);
+}
+
+.section__title {
+  .cleanvertising(300);
+  .rem-size(50);
+  .line-height-rem(56);
+  color: #ffffff;
+}
+
+.preview__wrap {
+  //.row-float();
+}
+
+.contents__preview {
+  //.col();
+  //.col-float();
+  //.size(12);
+}
+
+.preview-item {
+  //.col();
+  //.col-float();
+  //.size(12);
+  .display-container();
+}
+.owl-carousel .owl-item img {
+  text-align: center;
+  display: inline-block;
+  width: 185px;
+}
+.preview-item__avatar {
+  .center-align();
+  margin-bottom: 25px;
+}
+
+.preview-item__img {
+  .circle-img(185);
+  background-color: #cea380;
+  border: 10px solid rgba(88,85,81, 0.88);
+}
+
+.preview-item__contents {
+  .max-width(720);
+  margin: 0 auto;
+  .center-align();
+  .display-container();
+
+  p {
+    .roboto();
+    .rem-size-mb(15);
+    .line-height-rem(24);
+    color: #ffffff;
+  }
+}
+
+.preview-item__title {
+  font-family: @ff-serifTimes;
+  .rem-size(22);
+  .line-height-rem(26);
+  color: #ffffff;
+  font-style: italic;
+  .display-container();
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: #cea380;
+    .display-bottommiddle();
+  }
+}
+
+/*оформляем точки*/
+.owl-dots {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  .circle-img(16);
+  .bgc-rgba(#fff, .5);
+  .dib-mid();
+  margin: 0 5px;
+
+  &.active {
+    .bgc-rgba(#fff, .8);
+  }
+}
+
+/*оформляем стрелки*/
+.owl-nav div {
+  .width(37);
+  .height(140);
+  opacity: 0.6;
+  .transition(.3);
+  background: url(../i/arr-next.png) no-repeat top right;
+  .display-topright();
+
+  &.owl-next {
+    .width(37);
+    .height(140);
+    opacity: 0.6;
+    .transition(.3);
+    background: url(../i/arr-prev.png) no-repeat top left;
+    .display-topleft();
+
+  }
+}
+

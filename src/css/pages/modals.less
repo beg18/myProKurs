@@ -1,0 +1,54 @@
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.modal{
+  width: 390px;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 1000;
+  display: none;
+
+  .sm-block({
+    width: 300px;
+  });
+
+  .profi-form {
+    .display-container();
+    max-width: 500px;
+
+    .sm-block({
+      max-width: 300px;
+    });
+  }
+
+  .profi-form__contents {
+    width: 100%;
+
+    .sm-block({
+      max-width: 300px;
+    });
+  }
+
+  .btn_close {
+    .display-topright();
+  }
+}
+
+.modal_lg{
+  width: 500px;
+
+  .sm-block({
+    max-width: 300px;
+  });
+}

@@ -1,0 +1,159 @@
+// out: null
+
+
+@import "_variables";
+
+
+.reset();
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: @ff-s-serifArial;
+    font-size: @regular;
+    color: @base_color;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/* Bower components import
+@import "../../bower_components/lesshat/less/shape";
+==============================*/
+@import (less)"../../bower_components/fancybox/jquery.fancybox.css";
+@import (less)"../../bower_components/owl-carousel/dist/assets/owl.carousel.css";
+@import (less)"../../bower_components/owl-carousel/dist/assets/owl.theme.default.css";
+@import (less)"../../bower_components/countdown/jquery.countdown.css";
+@import (less)"../../bower_components/font-awesome-4.2.0/css/font-awesome.min.css";
+@import (less)"../../bower_components/animate/animate-min.css";
+@import (less)"../../bower_components/Magnific-Popup/dist/magnific-popup.css";
+
+/* Vendor libs import
+==============================*/
+@import "libs/myFrameworks/superLess";
+@import "libs/smart-grid";
+
+
+/* Project Elements
+==============================*/
+@import "_elements";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/home";
+@import "pages/header";
+@import "pages/tizer";
+@import "pages/profi";
+@import "pages/preview";
+@import "pages/red-sec";
+@import "pages/contacts";
+@import "pages/footer";
+@import "pages/modals";
+
+
+
+*, *:before,
+*, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  .min-width(300);
+  .display-container();
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+html {
+  box-sizing: border-box;
+
+  .html-fz(16);
+
+  .sm-block({
+      .html-fz(15);
+  });
+
+  .xs-block({
+      .html-fz(14);
+  });
+
+  .xxs-block({
+    .html-fz(13);
+  });
+}
+
+.wrapper {
+    .wrapper();
+}
+
+
+

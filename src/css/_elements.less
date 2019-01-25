@@ -1,0 +1,260 @@
+// out: null
+
+
+
+/*===========================
+Table of Content
+
+1. Wrappers
+2. Buttons
+3. Form elements
+4. Font family
+5. Typography
+===========================*/
+
+
+
+/* 1. Wrappers
+===========================*/
+.wrapper {
+    .wrapper();
+}
+
+/* 2. Buttons
+===========================*/
+
+.btn_red {
+   .button(47, 35, @Red9b, white);
+    text-align: center;
+    .round();
+    .roboto(700);
+    .rem-size(16);
+    text-transform: uppercase;
+}
+
+.btn_green {
+    .button(47, 35, @Green, white);
+    text-align: center;
+    .round();
+    .roboto(700);
+    .rem-size(16);
+    text-transform: uppercase;
+}
+
+.btn_white {
+    .button(47, 35, white, black);
+    text-align: center;
+    .round();
+    .roboto(700);
+    .rem-size(16);
+    text-transform: uppercase;
+}
+
+
+/* 3. Form elements
+===========================*/
+*::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*:-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    .shadow-box(inset 0 0 5px @Red6D);
+    .round();
+    border: 1px solid transparent;
+}
+body input:required:valid,
+body textarea:required:valid {
+    .shadow-box(inset 0 0 5px @Green);
+    .round();
+    border: 1px solid transparent;
+}
+
+/*4. Font family
+===========================*/
+.roboto(@font-weight:400) {
+    font-family: "Roboto", @ff-s-serifLucida;
+    font-weight: @font-weight;
+}
+
+.cleanvertising(@font-weight:400) {
+    font-family: "cleanvertising", @ff-s-serifLucida;
+    font-weight: @font-weight;
+}
+
+.bebas(@font-weight:400) {
+    font-family: "Bebas", @ff-s-serifLucida;
+    font-weight: @font-weight;
+}
+
+
+/*5. Typography
+===========================*/
+
+html {
+    box-sizing: border-box;
+
+    .html-fz(16);
+
+    .sm-block({
+        .html-fz(14);
+    });
+
+    .xs-block({
+        .html-fz(12);
+    });
+
+    .xxs-block({
+        .html-fz(13);
+    });
+}
+
+h1 {
+    .rem-size(61);
+
+    .md-block({
+        .rem-size(54);
+    });
+
+    .sm-block({
+        .rem-size(48);
+    });
+
+    .xs-block({
+        .rem-size(42);
+    });
+
+    .xxs-block({
+        .rem-size(38);
+    });
+}
+
+
+h2 {
+    .rem-size(50);
+
+    .md-block({
+        .rem-size(46);
+    });
+
+    .sm-block({
+        .rem-size(42);
+    });
+
+    .xs-block({
+        .rem-size(38);
+    });
+
+    .xxs-block({
+        .rem-size(34);
+    });
+}
+
+h3 {
+    .rem-size(37);
+
+    .md-block({
+        .rem-size(34);
+    });
+
+    .sm-block({
+        .rem-size(32);
+    });
+
+    .xs-block({
+        .rem-size(30);
+    });
+
+    .xxs-block({
+        .rem-size(28);
+    });
+}
+
+h4 {
+    .rem-size(30);
+
+    .md-block({
+        .rem-size(28);
+    });
+
+    .sm-block({
+        .rem-size(26);
+    });
+
+    .xs-block({
+        .rem-size(24);
+    });
+
+    .xxs-block({
+        .rem-size(22);
+    });
+}
+
+h5 {
+    .rem-size(26);
+
+    .md-block({
+        .rem-size(24);
+    });
+
+    .sm-block({
+        .rem-size(22);
+    });
+
+    .xs-block({
+        .rem-size(20);
+    });
+
+    .xxs-block({
+        .rem-size(18);
+    });
+}
+
+h6 {
+    .rem-size(22);
+
+    .md-block({
+        .rem-size(20);
+    });
+
+    .sm-block({
+        .rem-size(18);
+    });
+
+    .xs-block({
+        .rem-size(17);
+    });
+
+    .xxs-block({
+        .rem-size(16);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
